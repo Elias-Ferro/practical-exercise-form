@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Exercícios - Formulário avançado</title>
+</head>
+<body>
+    <h1>Formulário avançado</h1>
+
+    <form action="/formadvanced.html" method="post">
+        <fieldset class="form-container">
+            <legend>Dados Pessoais</legend>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" required />
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" required />
+        </fieldset>
+
+        <fieldset class="form-container">
+            <legend>Endereço</legend>
+            <div class="logradouro">
+                <label for="street">Rua:</label>
+                <input type="text" name="street" id="street" required />
+
+                <label for="number">nº:</label>
+                <input type="text" name="number" id="number" required />
+            </div>
+            
+            <label for="city">Cidade:</label>
+            <input type="text" name="city" id="city" required />
+            
+            <label for="state">Estado:</label>
+            <input type="text" name="state" id="state" required />
+        </fieldset>
+           
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
